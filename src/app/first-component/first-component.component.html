@@ -1,0 +1,23 @@
+
+<!-- <div class="col-lg-4"> -->
+  <div class="card mb-5 mb-lg-0">
+    <div class="card-body">
+      <h5 class="card-title text-muted text-uppercase text-center">{{title}}</h5>
+      <h6 class="card-price text-center">{{obj.price}}<span class="period">/month</span></h6>           
+      <hr>
+      <ul class="fa-ul">
+        <li *ngFor="let vars of obj.True">
+          <span class="fa-li" ><i class="fas fa-check"></i></span>{{vars}}
+        </li>
+        <li *ngFor="let vars of obj.False" class="text-muted" style=" text-decoration: line-through;">
+          <span class="fa-li">
+            <i class="fas fa-times">
+
+            </i></span>>
+          {{vars}}
+        </li>
+      </ul>
+      <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+    </div>
+  </div>
+<!-- </div> -->
